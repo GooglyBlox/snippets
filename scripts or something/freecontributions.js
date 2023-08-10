@@ -1,0 +1,1 @@
+javascript:(function() {  var excludedDays = Array.from(document.querySelectorAll('.float-right.color-fg-muted .ContributionCalendar-day[data-level]'));    var days = document.querySelectorAll('.ContributionCalendar-day[data-level]');  days.forEach(function(day) {    if (!excludedDays.includes(day)) {      day.setAttribute('data-level', '4');    }  });})();
